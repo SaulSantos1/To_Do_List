@@ -13,6 +13,7 @@ class Task(models.Model):
         ('A_FAZER', 'A Fazer'),
         ('EM_ANDAMENTO', 'Em Andamento'),
         ('CONCLUIDO', 'Concluído'),
+        ('CANCELADO', 'Cancelado'),
     ]
 
     PRIORIDADE_CHOICES = [
