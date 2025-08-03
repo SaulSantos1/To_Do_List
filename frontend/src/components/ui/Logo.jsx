@@ -1,0 +1,18 @@
+import React from 'react';
+
+const Logo = () => {
+  return (
+    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path 
+        d="M18.6667 4L8 18.6667H14.6667L13.3333 28L24 13.3333H17.3333L18.6667 4Z" 
+        fill="currentColor"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
+
+export default Logo;
