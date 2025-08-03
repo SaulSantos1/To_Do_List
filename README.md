@@ -1,5 +1,5 @@
 
-![logo adivece](images/logo_advice_150.png)
+![logo adivece](images-videos/logo_advice_150.png)
 
 # 📝 To-Do List App: Guia Completo de Instalação e Execução
 
