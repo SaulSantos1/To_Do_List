@@ -3,6 +3,12 @@
 
 # 📝 To-Do List App: Guia Completo de Instalação e Execução
 
+## 🎥 Demonstração do Projeto
+
+📂 [Clique aqui para assistir ao vídeo de demonstração](images-videos/To%20Do%20List.mp4)
+
+> Clique na imagem acima para assistir a um vídeo mostrando a aplicação em funcionamento.
+
 ## 📌 Funcionalidades
 
 A aplicação **To-Do List** permite uma gestão eficiente de tarefas e usuários. Abaixo estão as principais funcionalidades disponíveis no sistema:
