@@ -1,12 +1,28 @@
 from rest_framework import generics, permissions, status
 from rest_framework.response import Response
 from .serializers import TaskSerializer
-from .models import Task
 from .services.services import TaskService
+from rest_framework.pagination import PageNumberPagination
+
+class CustomPagination(PageNumberPagination):
+    page_size = 5
+    page_size_query_param = 'page_size'
+    max_page_size = 100
+
+    def get_paginated_response(self, data):
+        return Response({
+            'count': self.page.paginator.count,
+            'total_pages': self.page.paginator.num_pages,
+            'current_page': self.page.number,
+            'next': self.get_next_link(),
+            'previous': self.get_previous_link(),
+            'results': data
+        })
 
 class TaskListCreateView(generics.ListCreateAPIView):
     serializer_class = TaskSerializer
     permission_classes = [permissions.IsAuthenticated]
+    pagination_class = CustomPagination  # Adicione esta linha
 
     def get_queryset(self):
         service = TaskService(self.request.user)
@@ -18,7 +34,6 @@ class TaskListCreateView(generics.ListCreateAPIView):
         service = TaskService(self.request.user)
         task = service.create(serializer.validated_data)
         return task
-
 class TaskRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = TaskSerializer
     permission_classes = [permissions.IsAuthenticated]
