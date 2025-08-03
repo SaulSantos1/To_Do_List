@@ -108,7 +108,7 @@ npm install
 - Inicie o servidor:
 
 ```bash
-npm start
+npm start 3001
 # Aplicação disponível em: http://localhost:3001
 ```
 
