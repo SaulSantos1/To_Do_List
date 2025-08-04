@@ -81,8 +81,8 @@ docker-compose down
 git clone https://github.com/SaulSantos1/To_Do_List.git
 cd To_Do_List
 pip install -r requirements.txt
-python -m venv venv
 cd backend
+python -m venv venv
 # Linux/Mac: source venv/bin/activate
 # Windows: venv\Scripts\activate
 ```
