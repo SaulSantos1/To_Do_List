@@ -78,16 +78,13 @@ docker-compose down
 - Configure o ambiente:
 
 ```bash
-cd backend
+git clone https://github.com/SaulSantos1/To_Do_List.git
+cd To_Do_List
+pip install -r requirements.txt
 python -m venv venv
+cd backend
 # Linux/Mac: source venv/bin/activate
 # Windows: venv\Scripts\activate
-```
-
-- Instale dependências:
-
-```bash
-pip install -r requirements.txt
 ```
 
 - Execute migrações:
