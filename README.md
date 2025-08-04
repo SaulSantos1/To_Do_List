@@ -56,7 +56,7 @@ docker-compose up --build
 3. Iniciar ambos os servidores
 
 ##### Acesse a aplicação
-- Frontend: http://localhost:3001
+- Frontend: http://localhost:3000
 
 - API Backend: http://localhost:8000/
 
@@ -80,11 +80,11 @@ docker-compose down
 ```bash
 git clone https://github.com/SaulSantos1/To_Do_List.git
 cd To_Do_List
-pip install -r requirements.txt
 cd backend
 python -m venv venv
-# Linux/Mac: source venv/bin/activate
-# Windows: venv\Scripts\activate
+Linux/Mac: source venv/bin/activate
+Windows: venv\Scripts\activate
+pip install -r ../requirements.txt
 ```
 
 - Execute migrações:
@@ -111,9 +111,11 @@ npm install
 - Inicie o servidor:
 
 ```bash
-npm start 3001
-# Aplicação disponível em: http://localhost:3001
+npm start
+# Aplicação disponível em: http://localhost:3000
+# Se a porta 3000 já estiver sendo usada user o comando set PORT=3001 && npm start
 ```
+
 
 ## ⚙️ Fluxo de Desenvolvimento
 #### GitHub Actions
