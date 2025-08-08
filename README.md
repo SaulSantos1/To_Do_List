@@ -15,7 +15,7 @@ A aplicação **To-Do List** permite uma gestão eficiente de tarefas e usuário
 
 ### ✅ Gerenciamento de Tarefas
 - **Paginação de Tarefas:** As tarefas são exibidas com paginação para facilitar a navegação em listas longas.
-- **Filtro de Tarefas:** Permite filtrar tarefas status (a fazer, em andamento, concluída e não concluída).
+- **Filtro de Tarefas:** Permite filtrar tarefas por status (a fazer, em andamento, concluída e não concluída).
 - **Criação de Tarefa:** Adicione novas tarefas com título, descrição, status e responsável.
 - **Edição de Tarefa:** Atualize informações das tarefas existentes.
 - **Deleção de Tarefa:** Remova tarefas da lista de forma permanente.
